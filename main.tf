@@ -17,3 +17,7 @@ resource "null_resource" "resource1" {
     command = "pwd"
   }
 }
+
+module "sub_module_1" {
+  source = "./modules/sub_module_1"
+}
